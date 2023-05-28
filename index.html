@@ -1,9 +1,40 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Redirigir al navegador a otra URL</title>
-<META HTTP-EQUIV="REFRESH" CONTENT="0;URL=https://elmaestrotic.github.io/Challenge-Oracle-One-Alura-2023/elmaestrotic/Challenge-Oracle-One-Alura-2023/src/index.html">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Encriptador de Texto usando Cifrado Cesar</title>
+     <link rel="stylesheet" href="css/styles.css"/>
+
 </head>
 <body>
-Rdireccionando al index ppal
+<div class="container">
+    <img src="img/Logo-1.png"/>
+    <div class="cifrar">
+        <textarea name="outputText" class="outputText" id="outputText" cols="30" rows="10"
+                  placeholder="Ingresa el texto aquí para encriptarlo usando el crifrado Cesar"></textarea>
+
+        <div class="tips">
+            <p>Solo letras minúsculas y sin acentos.</p>
+        </div>
+        <div class="buttons">
+            <button class="btn-encrypt" type="button" onclick="encrypt()">
+                Encriptar
+            </button>
+            <input type="button" class="btn-unencrypt" value="Desencriptar"
+                   onclick="decrypt()"/>
+        </div>
+    </div>
+    <div class="encrypted">
+        <img src="img/muñeco.png" alt="" id="muñeco"/>
+        <div class="message-encrypted" id="message-encrypted">
+            <h2 id="titulosalida">Ningún mensaje fue encontrado</h2>
+            <p id="txtsalida" font-size=font size="22">
+                Ingresa el texto que deseas encriptar o desencriptar</p>
+
+        </div>
+    </div>
+</div>
 </body>
+<script src="js/script.js"></script>
 </html>
